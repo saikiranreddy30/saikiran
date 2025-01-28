@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Marks</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        main {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+        }
+
+        input[type="radio"] {
+            margin: 5px;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        .li{
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Enter Marks</h1>
+</header>
+
+<main>
+    <form id="marksForm" action="process_marks.php" method="post">
+        <label for="idNumber">ID Number:</label>
+        <input type="text" id="idNumber" name="idNumber" required>
+        <br>
+        <label>Content Mastery:</label><br>
+        <input type="radio" name="contentMastery" value="Excellent" required>Excellent<br>
+        <input type="radio" name="contentMastery" value="Good">Good<br>
+        <input type="radio" name="contentMastery" value="Average">Average<br>
+        <input type="radio" name="contentMastery" value="Poor">Poor<br>
+        <br>
+        <label>Body Language:</label><br>
+        <input type="radio" name="bodyLanguage" value="Excellent" required>Excellent<br>
+        <input type="radio" name="bodyLanguage" value="Good">Good<br>
+        <input type="radio" name="bodyLanguage" value="Average">Average<br>
+        <input type="radio" name="bodyLanguage" value="Poor">Poor<br>
+        <br>
+        <label>Time Management:</label><br>
+        <input type="radio" name="timeManagement" value="Excellent" required>Excellent<br>
+        <input type="radio" name="timeManagement" value="Good">Good<br>
+        <input type="radio" name="timeManagement" value="Average" >Average<br>
+        <input type="radio" name="timeManagement" value="Poor">Poor<br>
+        <br>
+        <label>Confidence:</label><br>
+        <input type="radio" name="confidence" value="Excellent" required>Excellent<br>
+        <input type="radio" name="confidence" value="Good">Good<br>
+        <input type="radio" name="confidence" value="Average">Average<br>
+        <input type="radio" name="confidence" value="Poor">Poor<br>
+        <br>
+        <!-- <label>Confidence:</label><br>
+        <ul>
+            <li class="li"> <input  type="radio" name="confidence" value="Good" >Good</li>
+            <li class="li"> <input type="radio" name="confidence" value="Good">Good</li>
+            <li class="li"> <input type="radio" name="confidence" value="Good">Good</li>
+            <li class="li"> <input type="radio" name="confidence" value="Good">Good</li>
+        </ul> -->
+  
+        <label for="remark">Remark:</label>
+        <textarea id="remark" name="remark" rows="4" required></textarea>
+
+        <button type="submit">Submit Marks</button>
+    </form>
+</main>
+
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>results</title>
+
+    <!-- Link to Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa; /* Light gray background */
+            color: #343a40; /* Dark text color */
+        }
+
+        header {
+            background-color: #007bff; /* Blue header background */
+            padding: 20px 0;
+            text-align: center;
+            color: #fff; /* White text color */
+        }
+
+        .container {
+            padding: 40px 15px;
+        }
+
+        section {
+            background-color: #fff; /* White section background */
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #007bff; /* Blue heading color */
+        }
+
+        form {
+            max-width: 400px;
+            margin: auto;
+        }
+
+        form label {
+            font-weight: bold;
+        }
+
+        form select {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+
+        form button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>summerisation result</h1>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <section>
+            <h2>Enter Details</h2>
+            <!-- Modern Form with Select Lists -->
+            <form>
+                <div class="form-group">
+                    <label for="department">Department</label>
+                    <select id="department" name="department" required>
+                        <option value="it">IT</option>
+                        <option value="cse">CSE</option>
+                        <option value="cse">AIML</option>
+                        <option value="cse">DS</option>
+                        <option value="cse">AIDS</option>
+                        <option value="cse">ECE</option>
+                        <!-- Add more department options as needed -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="yearSem">Year/Semester</label>
+                    <select id="yearSem" name="yearSem" required>
+                        <option value="1">1st Year</option>
+                        <option value="2">2nd Year</option>
+                        <!-- Add more year/semester options as needed -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <select id="subject" name="subject" required>
+                        <option value="math">Mathematics</option>
+                        <option value="physics">Physics</option>
+                        <!-- Add more subject options as needed -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="section">Section</label>
+                    <select id="section" name="section" required>
+                        <option value="a">A</option>
+                        <option value="b">B</option>
+                        <option value="c">C</option>
+                        <!-- Add more section options as needed -->
+                    </select>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <!-- Add more sections or content as needed -->
+
+    </div>
+
+    <!-- Link to Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
